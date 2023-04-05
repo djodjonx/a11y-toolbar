@@ -1,0 +1,64 @@
+@import "../../../variable.scss";
+
+.a11y-heading-plugin {
+  &__outline {
+    color: $darkGray;
+
+    &-entry {
+      padding: 0.25rem;
+      
+        &.heading {
+          &__level {
+            &-1 {
+              margin-left: 0;
+            }
+      
+            &-2 {
+              margin-left: 0.5rem;
+            }
+      
+            &-3 {
+              margin-left: 1rem;
+            }
+      
+            &-4 {
+              margin-left: 1.5rem;
+            }
+      
+            &-5 {
+              margin-left: 2rem;
+            }
+      
+            &-6 {
+              margin-left: 2.5rem;
+            }
+          }
+      
+          &__status {
+            &-success {
+              background-color: $annotationSuccess;
+            }
+      
+            &-error {
+              background-color: $annotationError;
+            }
+
+            &-warning {
+              background-color: $annotationWarning;
+            }
+          }
+        }
+    }
+
+    &-level {
+      @include position(relative, -0.125rem, auto, auto, auto);
+        margin-right: 0.313rem;
+        padding: 0.125rem 0.188rem;
+        pointer-events: none;
+    }
+
+    &-heading-text {
+      background-color: transparent;
+    }
+  }
+}

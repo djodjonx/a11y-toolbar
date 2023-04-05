@@ -1,0 +1,19 @@
+@import "./variable.scss";
+@import "./base.scss";
+
+.a11y-sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 0.063rem;
+  margin: -0.063rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0.063rem;
+}
+
+.a11y-element {
+  &--highlighted {
+    background-color: $lighterGray;
+  }
+}

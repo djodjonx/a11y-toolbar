@@ -1,0 +1,58 @@
+$fontSize: 0.875rem;
+$fontSizeSmall: 0.688rem;
+$fontSizeTitle: 1.2rem;
+$borderRadius: 0.313rem;
+
+$darkGray: #333;
+$gray: #555;
+$lightGray: #999;
+$lighterGray: #ddd;
+$white: #f2f2f2;
+$black: #000;
+
+$kaGreen: #639b24;
+
+$annotationSuccess: #b9eda9;
+$annotationWarning: #ed9e59;
+$annotationError: #e35b5b;
+
+$darkBorderColor: $gray;
+$lightBorderColor: $lightGray;
+
+// z-index variables
+$z-index--UI: 9998;
+
+@mixin dark-color-scheme () {
+  background-color: $darkGray;
+  color: $white;
+}
+
+// Position mixin
+@mixin position($position: static, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin sr-only() {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 0.063rem;
+  margin: -0.063rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0.063rem;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}

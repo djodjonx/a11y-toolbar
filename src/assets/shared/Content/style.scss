@@ -1,0 +1,13 @@
+.a11y-content {
+  &__heading {
+    &--selected {
+      background-color: gray;
+    }
+  }
+
+  &__body {
+    &--selected {
+      background-color: gray;
+    }
+  }
+}

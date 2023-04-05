@@ -1,0 +1,69 @@
+/**
+ * Base styles for tota11y to make sure things look consistent under
+ * reasonable circumstances.
+ */
+
+@import "./variable.scss";
+
+.a11y {
+
+  // A reset of all styles in tota11y elements
+  &,
+  & * {
+    background-color: inherit;
+    box-sizing: border-box;
+    text-align: left;
+    text-shadow: none;
+  }
+
+  // This applies to all styles within .tota11y, meaning it excludes items
+  // like annotations
+  // & * {
+  //   height: auto;
+  //   width: auto;
+  // }
+
+  strong {
+    font-weight: bold;
+  }
+
+  // Some normalized styles for specific elements we use in tota11y
+  pre,
+  code {
+    background-color: $lighterGray;
+    border: none;
+    border-radius: 0;
+    font-family: monospace;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  pre {
+    padding: 0.313rem 0.625rem;
+    margin: 0 0 0.625rem;
+    overflow-x: scroll;
+  }
+
+  code {
+    border-radius: 0.125rem;
+    display: inline;
+    padding: 0.063rem;
+  }
+
+  i,
+  em {
+    font-style: italic;
+  }
+
+  p {
+    margin: 0 0 0.625rem;
+  }
+
+  a,
+  a:hover,
+  a:focus {
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+  }
+}
